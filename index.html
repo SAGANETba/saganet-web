@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGANET | Conectividad de Alta Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-azul-rey { background-color: #0041C2; }
+        .text-azul-rey { color: #0041C2; }
+        .border-azul-rey { border-color: #0041C2; }
+        html { scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,65,194,0.2); }
+        /* Estilo para los logos de servicios */
+        .service-logo { filter: grayscale(100%); transition: all 0.3s ease; }
+        .service-logo:hover { filter: grayscale(0%); transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <nav class="p-5 flex justify-between items-center bg-black text-white sticky top-0 z-50 shadow-2xl">
+        <h1 class="text-3xl font-black italic">SAGA<span class="text-azul-rey">NET</span></h1>
+        <div class="hidden md:flex space-x-6 font-bold text-xs tracking-widest uppercase items-center">
+            <a href="#inicio" class="hover:text-azul-rey transition">Inicio</a>
+            <a href="#nosotros" class="hover:text-azul-rey transition">Nosotros</a>
+            <a href="#planes" class="hover:text-azul-rey transition">Planes</a>
+            <a href="#servicios" class="hover:text-azul-rey transition">Servicios</a>
+            <a href="https://www.sat.gob.mx/personas/facturacion-electronica" target="_blank" class="bg-white text-black px-4 py-1.5 rounded-md hover:bg-azul-rey hover:text-white transition font-black">FACTURACIÓN</a>
+        </div>
+        <a href="https://wa.me/527721179526" class="bg-azul-rey hover:bg-blue-700 text-white px-6 py-2 rounded-full font-bold transition text-sm">CONTACTAR</a>
+    </nav>
+
+    <header id="inicio" class="relative h-screen flex items-center justify-center text-center bg-black text-white">
+        <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+        <div class="relative z-10 px-5 max-w-5xl">
+            <h2 class="text-6xl md:text-8xl font-black mb-6 leading-none uppercase italic">Conectamos tu mundo,<br><span class="text-azul-rey">impulsamos tu vida.</span></h2>
+            <p class="text-xl md:text-2xl mb-10 opacity-80 font-light italic">"El mejor internet para tu hogar y negocio con tecnología de vanguardia."</p>
+            <div class="flex flex-col md:flex-row gap-5 justify-center">
+                <a href="#planes" class="bg-azul-rey text-white px-12 py-5 rounded-full font-extrabold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/40">VER PLANES</a>
+                <a href="#test" class="bg-white text-black px-12 py-5 rounded-full font-extrabold text-lg hover:bg-gray-200 transition-all">PRUEBA TU VELOCIDAD</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-24 bg-gray-50 px-5">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black mb-4 uppercase italic">Identidad <span class="text-azul-rey">Saganet</span></h2>
+                <div class="w-24 h-2 bg-azul-rey mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-xl card-hover transition-all">
+                    <i class="fas fa-network-wired text-4xl text-azul-rey mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase">¿Qué es Saganet?</h3>
+                    <p class="text-gray-600 leading-relaxed italic">"Brindamos la mejor calidad en redes y lo último en tecnología, con servicios de instalación de acuerdo a sus necesidades."</p>
+                </div>
+                <div class="bg-azul-rey p-10 rounded-3xl shadow-xl text-white card-hover transition-all">
+                    <i class="fas fa-rocket text-4xl mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase">Misión</h3>
+                    <p class="opacity-90 leading-relaxed font-light">Satisfacer las necesidades de nuestros clientes con soluciones de superior tecnología y altos estándares de responsabilidad profesional.</p>
+                </div>
+                <div class="bg-black p-10 rounded-3xl shadow-xl text-white card-hover transition-all">
+                    <i class="fas fa-eye text-4xl text-azul-rey mb-6"></i>
+                    <h3 class="text-2xl font-black mb-4 uppercase text-azul-rey">Visión</h3>
+                    <p class="opacity-90 leading-relaxed font-light">Ser la empresa líder nacional en servicios de redes de alta calidad y la preferida en el sector empresarial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="py-24 bg-white px-5">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-5xl font-black uppercase">Planes de <span class="text-azul-rey">Alta Velocidad</span></h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-10 items-center">
+            <div class="p-10 rounded-[3rem] border-2 border-gray-100 text-center hover:border-azul-rey transition group bg-white">
+                <h4 class="text-gray-400 font-bold uppercase tracking-widest text-sm mb-4">Hogar Inicial</h4>
+                <div class="text-7xl font-black mb-6 group-hover:text-azul-rey transition">13 <span class="text-xl">Mbps</span></div>
+                <ul class="text-left space-y-4 mb-10 text-gray-500 font-medium">
+                    <li><i class="fas fa-check-circle text-azul-rey mr-2"></i> Redes Sociales & Web</li>
+                    <li><i class="fas fa-check-circle text-azul-rey mr-2"></i> Streaming Calidad Base</li>
+                    <li><i class="fas fa-check-circle text-azul-rey mr-2"></i> Soporte Local</li>
+                </ul>
+                <a href="https://wa.me/527721179526?text=Quiero%20el%20Plan%20Basico%20de%2013MB" class="block w-full py-4 rounded-2xl bg-gray-100 font-bold hover:bg-black hover:text-white transition uppercase">Contratar</a>
+            </div>
+            <div class="p-10 rounded-[3rem] bg-black text-white text-center transform scale-110 shadow-2xl relative overflow-hidden z-10">
+                <div class="absolute top-5 right-5 bg-azul-rey text-xs font-black px-3 py-1 rounded-full uppercase italic">Top Ventas</div>
+                <h4 class="text-azul-rey font-bold uppercase tracking-widest text-sm mb-4 italic">Plan Plus</h4>
+                <div class="text-7xl font-black mb-6">16 <span class="text-xl text-azul-rey">Mbps</span></div>
+                <ul class="text-left space-y-4 mb-10 text-gray-300 font-medium">
+                    <li><i class="fas fa-star text-azul-rey mr-2"></i> Video Conferencias HD</li>
+                    <li><i class="fas fa-star text-azul-rey mr-2"></i> Netflix & YouTube 4K</li>
+                    <li><i class="fas fa-star text-azul-rey mr-2"></i> Home Office Estable</li>
+                </ul>
+                <a href="https://wa.me/527721179526?text=Quiero%20el%20Plan%20Plus%20de%2016MB" class="block w-full py-4 rounded-2xl bg-azul-rey font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-600/40 uppercase">Contratar Ahora</a>
+            </div>
+            <div class="p-10 rounded-[3rem] border-2 border-gray-100 text-center hover:border-azul-rey transition group bg-white">
+                <h4 class="text-gray-400 font-bold uppercase tracking-widest text-sm mb-4">Plan Premium</h4>
+                <div class="text-7xl font-black mb-6 group-hover:text-azul-rey transition">20 <span class="text-xl">Mbps</span></div>
+                <ul class="text-left space-y-4 mb-10 text-gray-500 font-medium">
+                    <li><i class="fas fa-bolt text-azul-rey mr-2"></i> Máximo Desempeño</li>
+                    <li><i class="fas fa-bolt text-azul-rey mr-2"></i> Múltiples Dispositivos</li>
+                    <li><i class="fas fa-bolt text-azul-rey mr-2"></i> Gaming & Descargas</li>
+                </ul>
+                <a href="https://wa.me/527721179526?text=Quiero%20el%20Plan%20Premium%20de%2020MB" class="block w-full py-4 rounded-2xl bg-gray-100 font-bold hover:bg-black hover:text-white transition uppercase">Contratar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-24 bg-gray-50 px-5">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-5xl font-black uppercase mb-4 text-black">Servicios <span class="text-azul-rey italic">Extras</span></h2>
+            <p class="text-gray-500 font-bold uppercase tracking-widest text-sm mb-12">Potencia tu entretenimiento y productividad</p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center bg-white p-12 rounded-[3rem] shadow-xl border border-gray-100">
+                <a href="https://wa.me/527721179526?text=Hola,%20quiero%20contratar%20Netflix" target="_blank" class="group">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="h-8 md:h-10 service-logo">
+                </a>
+                <a href="https://wa.me/527721179526?text=Hola,%20quiero%20contratar%20Vix" target="_blank" class="group">
+                    <div class="h-8 md:h-10 flex items-center justify-center service-logo">
+                        <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg" class="h-full">
+                            <path d="M25.4 12.1l14.9 41.2 14.8-41.2h12.9L46.8 67.9H34.1L12.5 12.1h12.9z" fill="#000"/>
+                            <circle cx="78" cy="18" r="7" fill="#FF5000"/>
+                            <path d="M71.5 28.5h13v39.4h-13z" fill="#000"/>
+                            <path d="M112.5 12.1l12.5 18.2 12.5-18.2h14.5l-19.5 27.5 20.2 28.3h-14.8l-12.9-19-12.9 19H98l20.2-28.3-19.5-27.5h13.8z" fill="#000"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://wa.me/527721179526?text=Hola,%20quiero%20contratar%20Disney+" target="_blank" class="group">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+" class="h-8 md:h-10 service-logo">
+                </a>
+                <a href="https://wa.me/527721179526?text=Hola,%20quiero%20contratar%20Prime%20Video" target="_blank" class="group">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Amazon_Prime_Video_logo.svg" alt="Prime Video" class="h-8 md:h-10 service-logo">
+                </a>
+                <a href="https://wa.me/527721179526?text=Hola,%20quiero%20contratar%20ChatGPT%20Pro" target="_blank" class="group">
+                    <div class="flex items-center gap-2 service-logo h-8 md:h-10 justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT" class="h-full">
+                        <span class="font-black text-[10px] md:text-xs">PRO</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="facturacion" class="py-16 bg-white px-5 border-t border-gray-100">
+        <div class="max-w-4xl mx-auto text-center bg-gray-50 p-12 rounded-[3rem] border-2 border-dashed border-gray-200">
+            <i class="fas fa-file-invoice-dollar text-5xl text-azul-rey mb-6"></i>
+            <h2 class="text-3xl font-black uppercase mb-4 tracking-tighter">¿Necesitas factura fiscal?</h2>
+            <p class="text-gray-500 mb-8 font-medium">Haz clic en el botón para ir a la sección oficial de facturación electrónica del SAT.</p>
+            <a href="https://www.sat.gob.mx/personas/facturacion-electronica" target="_blank" class="inline-block bg-black text-white px-12 py-4 rounded-2xl font-black hover:bg-azul-rey transition shadow-xl uppercase tracking-widest">
+                FACTURACIÓN <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="test" class="py-24 bg-black text-white px-5">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex justify-center items-center mb-10">
+                <span class="text-3xl font-black tracking-tighter">FAST TEST</span>
+                <span class="ml-3 px-2 py-1 bg-red-600 text-white text-[10px] font-black rounded uppercase">Speed Check</span>
+            </div>
+            <h2 class="text-4xl md:text-6xl font-black mb-8 uppercase italic tracking-tighter">¿Recibes lo que <span class="text-azul-rey">pagas</span>?</h2>
+            <div class="bg-zinc-900/50 p-12 rounded-[4rem] border border-zinc-800 shadow-2xl">
+                <i class="fas fa-tachometer-alt text-8xl text-azul-rey mb-8 opacity-20"></i>
+                <p class="text-gray-400 mb-10 text-lg">Mide tu velocidad real de descarga con nuestra herramienta oficial externa.</p>
+                <a href="https://fast.com" target="_blank" class="bg-white text-black px-16 py-6 rounded-full font-black text-3xl hover:bg-azul-rey hover:text-white transition-all shadow-xl active:scale-95 uppercase tracking-tighter">
+                    INICIAR <i class="fas fa-play text-sm ml-2"></i>
+                </a>
+            </div>
+            <p class="mt-12 text-gray-500 uppercase text-xs tracking-[0.4em] font-bold italic">¿Internet lento? <a href="https://wa.me/527721179526" class="text-azul-rey underline">Cámbiate a SAGANET</a></p>
+        </div>
+    </section>
+
+    <footer class="py-16 bg-white border-t-8 border-azul-rey px-5">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
+            <div>
+                <h2 class="text-4xl font-black italic">SAGA<span class="text-azul-rey">NET</span></h2>
+                <p class="text-gray-400 font-medium">La mejor red de conectividad wifi de la región.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="font-black text-gray-400 uppercase text-xs tracking-widest mb-2">Contacto Directo</p>
+                <p class="text-4xl font-black text-black">772 117 9526</p>
+            </div>
+        </div>
+        <div class="text-center mt-16 text-gray-400 text-[10px] uppercase font-bold tracking-[0.5em]">
+            © 2026 SAGANET - Conexión de Superior Tecnología
+        </div>
+    </footer>
+
+    <a href="https://wa.me/527721179526" target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-all z-50">
+        <i class="fab fa-whatsapp text-4xl"></i>
+    </a>
+
+</body>
+</html>
