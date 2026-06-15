@@ -6,7 +6,7 @@
     <title>SAGANET | Conectividad de Alta Tecnología</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-   <style>
+    <style>
     @keyframes pulse-blue {
         0% { shadow: 0 0 0 0 rgba(0, 65, 194, 0.7); }
         70% { box-shadow: 0 0 0 15px rgba(0, 65, 194, 0); }
@@ -15,25 +15,43 @@
     .btn-pulse {
         animation: pulse-blue 2s infinite;
     }
-</style>
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'azul-rey': '#0041C2',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
-    <div class="bg-azul-rey text-white py-2 text-center text-xs font-black tracking-[0.2em] uppercase animate-pulse-soft">
-        <i class="fas fa-bolt mr-2 text-yellow-300"></i> ¡Próximamente: Migración a Fibra Óptica! <i class="fas fa-bolt ml-2 text-yellow-300"></i>
+    <!-- TOP BAR DE INICIO ACOMODADA Y CORRECTAMENTE CORREGIDA -->
+    <div class="text-white py-3 text-center text-xs font-black tracking-[0.2em] uppercase flex items-center justify-center gap-2 border-b border-white/10" style="background-color: #0041C2;">
+        <i class="fas fa-bolt text-yellow-300"></i> 
+        ¡Próximamente: Migración a Fibra Óptica! 
+        <i class="fas fa-bolt text-yellow-300"></i>
     </div>
 
-<nav class="bg-black/70 backdrop-blur-md border-b border-white/10 ...">    <h1 class="text-2xl md:text-3xl font-black italic">SAGA<span class="text-azul-rey">NET</span></h1>
+    <nav class="bg-black/70 backdrop-blur-md border-b border-white/10 p-4 flex flex-wrap justify-between items-center sticky top-0 z-50 text-white">   
+        <h1 class="text-2xl md:text-3xl font-black italic">SAGA<span class="text-azul-rey">NET</span></h1>
 
-    <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 font-bold text-[10px] md:text-xs tracking-widest uppercase order-3 md:order-2 w-full md:w-auto">
-        <a href="#inicio" class="hover:text-azul-rey transition">Inicio</a>
-        <a href="#nosotros" class="hover:text-azul-rey transition">Nosotros</a>
-        <a href="#planes" class="hover:text-azul-rey transition">Planes</a>
-        <a href="https://www.sat.gob.mx/personas/facturacion-electronica" target="_blank" class="bg-white text-black px-3 py-1 rounded-md hover:bg-azul-rey hover:text-white transition font-black">FACTURACIÓN</a>
-    </div>
+        <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6 font-bold text-[10px] md:text-xs tracking-widest uppercase order-3 md:order-2 w-full md:w-auto">
+            <a href="#inicio" class="hover:text-azul-rey transition">Inicio</a>
+            <a href="#nosotros" class="hover:text-azul-rey transition">Nosotros</a>
+            <a href="#planes" class="hover:text-azul-rey transition">Planes</a>
+            <a href="https://www.sat.gob.mx/personas/facturacion-electronica" target="_blank" class="bg-white text-black px-3 py-1 rounded-md hover:bg-azul-rey hover:text-white transition font-black">FACTURACIÓN</a>
+<a href="https://clientes.portalinternet.app/saldo/saganet/" target="_blank" class="bg-white text-black px-3 py-1 rounded-md hover:bg-azul-rey hover:text-white transition font-black">PAGAR SERVICIO</a>
+        </div>
 
-    <a href="https://wa.me/527721179526" class="bg-azul-rey hover:bg-blue-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-full font-bold transition text-xs md:text-sm order-2 md:order-3">CONTACTAR</a>
-</nav>
+        </div>
+
+        <a href="https://wa.me/527721179526" class="bg-azul-rey hover:bg-blue-700 text-white px-4 py-2 md:px-6 md:py-2 rounded-full font-bold transition text-xs md:text-sm order-2 md:order-3">CONTACTAR</a>
+    </nav>
 
     <header id="inicio" class="relative h-screen flex items-center justify-center text-center bg-black text-white">
         <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
@@ -42,88 +60,84 @@
             <p class="text-xl md:text-2xl mb-10 opacity-80 font-light italic">"El mejor internet para tu hogar y negocio con tecnología de vanguardia."</p>
             <div class="flex flex-col md:flex-row gap-5 justify-center">
                 <a href="#planes" class="bg-azul-rey text-white px-12 py-5 rounded-full font-extrabold text-lg hover:bg-blue-700 transition-all shadow-xl shadow-blue-600/40">VER PLANES</a>
-              <a href="https://fast.com/es/" target="_blank" class="bg-white text-black px-12 py-5 rounded-full font-extrabold text-lg hover:bg-gray-200 transition-all uppercase tracking-widest shadow-xl">PRUEBA TU VELOCIDAD</a>
+                <a href="https://fast.com/es/" target="_blank" class="bg-white text-black px-12 py-5 rounded-full font-extrabold text-lg hover:bg-gray-200 transition-all uppercase tracking-widest shadow-xl">PRUEBA TU VELOCIDAD</a>
             </div>
         </div>
     </header>
 
-<section id="fibra" class="py-20 bg-gray-50 px-5 border-t border-gray-100">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-            
-            <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-video bg-azul-rey flex items-center justify-center">
-                
-                <img src="fibra.jpg" 
-     alt="Tecnología de Fibra Óptica Saganet" 
-     class="w-full h-full object-cover"
-     style="display: block !important;"
-     onerror="this.src='fibra.JPG'; this.onerror=function(){this.src='fibra.jpeg';}">
-                
+    <section id="fibra" class="py-20 bg-gray-50 px-5 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-video bg-azul-rey flex items-center justify-center">
+                    <img src="fibra.jpg" 
+                         alt="Tecnología de Fibra Óptica Saganet" 
+                         class="w-full h-full object-cover"
+                         style="display: block !important;"
+                         onerror="this.src='fibra.JPG'; this.onerror=function(){this.src='fibra.jpeg';}">
                 </div>
 
-            <div>
-                <h3 class="text-4xl font-black italic mb-6">La nueva era de <span class="text-azul-rey">Saganet</span></h3>
-                <p class="text-gray-600 mb-8 italic normal-case leading-relaxed">Estamos instalando tecnología de fibra óptica simétrica para que navegues a la velocidad de la luz. Experimenta estabilidad total, mínima latencia y máxima potencia en cada rincón de tu hogar o negocio.</p>
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3 font-bold text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                        <i class="fas fa-check-circle text-azul-rey text-lg"></i> Mayor estabilidad y confiabilidad
-                    </li>
-                    <li class="flex items-center gap-3 font-bold text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                        <i class="fas fa-bolt text-azul-rey text-lg"></i> Velocidad Simétrica (mismo upload y download)
-                    </li>
-                    <li class="flex items-center gap-3 font-bold text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100">
-                        <i class="fas fa-signal text-azul-rey text-lg"></i> Baja Latencia ideal para Gaming
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>  
-<section id="experiencia" class="py-24 bg-black text-white px-5 border-t-8 border-azul-rey shadow-[0_-10px_50px_rgba(0,65,194,0.3)]">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            
-            <div class="order-2 md:order-1 text-center md:text-left">
-                <i class="fas fa-network-wired text-5xl text-azul-rey mb-6"></i>
-                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 uppercase italic leading-tight tracking-tighter">
-                    El Internet más Rápido<br>que <span class="text-azul-rey animate-pulse">hayas tentido</span>
-                </h2>
-                <p class="text-gray-400 text-lg mb-8 font-light leading-relaxed">
-                    Imagina descargar archivos pesados en segundos, jugar online con cero lag y ver tus series en 4K sin interrupciones. SAGANET te lleva a un nuevo nivel de conexión. ¡Mira cómo fluye la velocidad!
-                </p>
-                <a href="#planes" class="inline-block bg-white text-black px-10 py-4 rounded-full font-black text-base hover:bg-azul-rey hover:text-white transition uppercase tracking-widest shadow-xl">Contratar</a>
-            </div>
-
-            <div class="order-1 md:order-2">
-                <div class="relative rounded-[3rem] overflow-hidden shadow-[0_0_60px_rgba(0,65,194,0.4)] border-4 border-azul-rey/50 aspect-video bg-zinc-900 group">
-                    
-                    <video autoplay muted loop playsinline class="w-full h-full object-cover">
-                        <source src="videoFibra.mp4" type="video/mp4">
-                        Tu navegador no soporta el formato de video.
-                    </video>
-                    
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none group-hover:from-azul-rey/40 transition"></div>
+                <div>
+                    <h3 class="text-4xl font-black italic mb-6">La nueva era de <span class="text-azul-rey">Saganet</span></h3>
+                    <p class="text-gray-600 mb-8 italic normal-case leading-relaxed">Estamos instalando tecnología de fibra óptica simétrica para que navegues a la velocidad de la luz. Experimenta estabilidad total, mínima latencia y máxima potencia en cada rincón de tu hogar o negocio.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 font-bold text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fas fa-check-circle text-azul-rey text-lg"></i> Mayor estabilidad and confiabilidad
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fas fa-bolt text-azul-rey text-lg"></i> Velocidad Simétrica (mismo upload y download)
+                        </li>
+                        <li class="flex items-center gap-3 font-bold text-sm bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fas fa-signal text-azul-rey text-lg"></i> Baja Latencia ideal para Gaming
+                        </li>
+                    </ul>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
-  <section id="nosotros" class="py-24 bg-white px-5 text-center">
+    </section>  
+
+    <section id="experiencia" class="py-24 bg-black text-white px-5 border-t-8 border-azul-rey shadow-[0_-10px_50px_rgba(0,65,194,0.3)]">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 text-center md:text-left">
+                    <i class="fas fa-network-wired text-5xl text-azul-rey mb-6"></i>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 uppercase italic leading-tight tracking-tighter">
+                        El Internet más Rápido<br>que <span class="text-azul-rey animate-pulse">hayas tenido</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8 font-light leading-relaxed">
+                        Imagina descargar archivos pesados en segundos, jugar online con cero lag y ver tus series en 4K sin interrupciones. SAGANET te lleva a un nuevo nivel de conexión. ¡Mira cómo fluye la velocidad!
+                    </p>
+                    <a href="#planes" class="inline-block bg-white text-black px-10 py-4 rounded-full font-black text-base hover:bg-azul-rey hover:text-white transition uppercase tracking-widest shadow-xl">Contratar</a>
+                </div>
+
+                <div class="order-1 md:order-2">
+                    <div class="relative rounded-[3rem] overflow-hidden shadow-[0_0_60px_rgba(0,65,194,0.4)] border-4 border-azul-rey/50 aspect-video bg-zinc-900 group">
+                        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+                            <source src="videoFibra.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none group-hover:from-azul-rey/40 transition"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE IDENTIDAD CON LA MISIÓN CORREGIDA -->
+    <section id="nosotros" class="py-24 bg-white px-5 text-center">
         <h2 class="text-5xl font-black mb-4 uppercase italic">Identidad <span class="text-azul-rey">Saganet</span></h2>
         <div class="w-24 h-2 bg-azul-rey mx-auto rounded-full mb-16"></div>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div class="bg-white p-10 rounded-3xl shadow-xl card-hover border border-gray-100 transition-all">
+            <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 transition-all">
                 <i class="fas fa-network-wired text-4xl text-azul-rey mb-6"></i>
                 <h3 class="text-2xl font-black mb-4 uppercase">¿Qué es Saganet?</h3>
                 <p class="text-gray-600 leading-relaxed italic text-sm">"Brindamos la mejor calidad en redes y lo último en tecnología, con servicios de instalación de acuerdo a sus necesidades."</p>
             </div>
-            <div class="bg-azul-rey p-10 rounded-3xl shadow-xl text-white card-hover transition-all">
+            <div class="bg-azul-rey p-10 rounded-3xl shadow-xl text-white transition-all">
                 <i class="fas fa-rocket text-4xl mb-6"></i>
                 <h3 class="text-2xl font-black mb-4 uppercase">Misión</h3>
-                <p class="opacity-90 leading-relaxed font-light text-sm">Satisfacer las necesidades de nuestros clientes con soluciones de superior tecnología y altos estándares de responsabilidad profesional.</p>
+                <p class="opacity-90 leading-relaxed font-light text-sm">Proveer soluciones de conectividad estables y veloces que impulsen el desarrollo digital de nuestra comunidad, manteniendo un servicio al cliente humano, ágil y de excelencia técnica.</p>
             </div>
-            <div class="bg-black p-10 rounded-3xl shadow-xl text-white card-hover transition-all">
+            <div class="bg-black p-10 rounded-3xl shadow-xl text-white transition-all">
                 <i class="fas fa-eye text-4xl text-azul-rey mb-6"></i>
                 <h3 class="text-2xl font-black mb-4 uppercase text-azul-rey">Visión</h3>
                 <p class="opacity-90 leading-relaxed font-light text-sm">Ser la empresa líder nacional en servicios de redes de alta calidad y la preferida en el sector empresarial.</p>
@@ -140,14 +154,13 @@
         </div>
     </section>
 
-   <section id="planes" class="py-24 bg-white px-5">
+    <section id="planes" class="py-24 bg-white px-5">
         <div class="max-w-6xl mx-auto text-center mb-16">
             <h2 class="text-5xl font-black uppercase italic">Planes de <span class="text-azul-rey text-shadow-lg">Alta Velocidad</span></h2>
             <p class="text-gray-500 mt-4 font-medium italic">Elige la potencia que tu hogar necesita</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-10 items-center max-w-6xl mx-auto">
-            
             <div class="p-10 rounded-[3.5rem] border-2 border-gray-100 text-center hover:border-azul-rey transition-all group bg-white hover:shadow-2xl shadow-azul-rey/10">
                 <h4 class="text-gray-400 font-bold uppercase tracking-widest text-xs mb-4 italic">Hogar Inicial</h4>
                 <div class="text-7xl font-black mb-6 group-hover:text-azul-rey transition">13 <span class="text-xl">Mbps</span></div>
@@ -190,7 +203,6 @@
                    Contratar Plan
                 </a>
             </div>
-
         </div>
     </section>
 
@@ -199,7 +211,6 @@
         <p class="text-gray-500 mb-12 font-medium">Haz clic en tu servicio favorito para contratarlo con nosotros</p>
         
         <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center bg-white p-10 rounded-[3rem] shadow-xl max-w-6xl mx-auto border border-gray-100">
-            
             <a href="https://wa.me/527721179526?text=Hola!%20Quiero%20contratar%20Netflix%20con%20SAGANET" target="_blank" class="service-logo group">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="h-8 transition-all group-hover:scale-110" alt="Netflix">
             </a>
@@ -225,103 +236,86 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" class="h-full transition-all group-hover:scale-110">
                 <span class="font-black text-[10px] group-hover:text-azul-rey transition-colors">PRO</span>
             </a>
-
         </div>
     </section>
-<!-- SECCIÓN DE CÁMARAS DE VIGILANCIA -->
-<section id="camaras" class="py-24 bg-white border-t border-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            
-            <!-- Columna de Texto -->
-            <div class="space-y-6 md:order-1 order-2">
-                <span class="text-azul-rey font-black tracking-tighter uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">Servicios Especializados</span>
-                
-                <h2 class="text-4xl md:text-5xl font-black text-black leading-tight italic uppercase">
-                    SEGURIDAD PARA TU <br><span class="text-azul-rey">HOGAR Y NEGOCIO</span>
-                </h2>
-                
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    No solo te conectamos, también protegemos lo que más quieres. Contamos con servicio profesional de **diseño, venta e instalación de sistemas de cámaras de vigilancia (CCTV)** con monitoreo en tiempo real desde tu celular.
-                </p>
 
-                <!-- Marcas Líderes -->
-                <div class="pt-2">
-                    <p class="text-xs uppercase font-black text-gray-400 mb-3 tracking-wider">Trabajamos con las mejores marcas del mercado:</p>
-                    <div class="flex flex-wrap gap-4 text-sm font-black text-black italic">
-                        <span class="bg-gray-100 px-4 py-2 rounded-xl border border-gray-200">HIKVISION</span>
-                        <span class="bg-gray-100 px-4 py-2 rounded-xl border border-gray-200">HiLook</span>
-                        <span class="bg-gray-100 px-4 py-2 rounded-xl border border-gray-200">EPCOM</span>
+    <!-- SECCIÓN DE CÁMARAS DE VIGILANCIA -->
+    <section id="camaras" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 md:order-1 order-2">
+                    <span class="text-azul-rey font-black tracking-tighter uppercase text-sm bg-blue-50 px-4 py-2 rounded-full">Servicios Especializados</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-black leading-tight italic uppercase">
+                        SEGURIDAD PARA TU <br><span class="text-azul-rey">HOGAR Y NEGOCIO</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        No solo te conectamos, también protegemos lo que más quieres. Contamos con servicio profesional de **diseño, venta e instalación de sistemas de cámaras de vigilancia (CCTV)** con monitoreo en tiempo real desde tu celular.
+                    </p>
+                    <div class="pt-2">
+                        
+                        <div class="flex flex-wrap gap-6 text-sm font-black text-black italic">
+                            <span class="bg-gray-100 px-4 py-4 rounded-xl border border-gray-300">Trabajamos con las mejores marcas del mercado</span>
+                    </div>
+                    </div>
+                    <div class="pt-4">
+                        <a href="https://wa.me/527721179526?text=Hola,%20me%20interesa%20una%20cotización%20para%20instalación%20de%20cámaras." 
+                           target="_blank" 
+                           class="inline-block bg-black text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-azul-rey transition shadow-lg uppercase tracking-wide">
+                            Cotizar Cámaras ⚡
+                        </a>
                     </div>
                 </div>
-
-                <div class="pt-4">
-                    <a href="https://wa.me/527721179526?text=Hola,%20me%20interesa%20una%20cotización%20para%20instalación%20de%20cámaras." 
-                       target="_blank" 
-                       class="inline-block bg-black text-white px-8 py-3.5 rounded-full font-bold text-sm hover:bg-azul-rey transition shadow-lg uppercase tracking-wide">
-                        Cotizar Cámaras ⚡
-                    </a>
-                </div>
-            </div>
-
-            <!-- Columna Visual (Iconos/Imagen con efecto) -->
-            <div class="md:order-2 order-1 relative flex justify-center">
-                <div class="absolute inset-0 bg-blue-100/50 rounded-[3rem] blur-3xl transform rotate-6 scale-95"></div>
-                <div class="relative bg-gray-50 border-2 border-gray-100 rounded-[2.5rem] p-10 shadow-xl text-center max-w-sm w-full space-y-6">
-                    <div class="w-20 h-20 bg-blue-500 rounded-3xl flex items-center justify-center mx-auto shadow-lg text-white text-4xl">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-black italic text-black">MONITOREO 24/7</h4>
-                        <p class="text-gray-500 text-sm mt-2 leading-relaxed">Vigila tus propiedades desde cualquier lugar del mundo a través de tu smartphone.</p>
+                <div class="md:order-2 order-1 relative flex justify-center">
+                    <div class="absolute inset-0 bg-blue-100/50 rounded-[3rem] blur-3xl transform rotate-6 scale-95"></div>
+                    <div class="relative bg-gray-50 border-2 border-gray-100 rounded-[2.5rem] p-10 shadow-xl text-center max-w-sm w-full space-y-6">
+                        <div class="w-20 h-20 bg-blue-500 rounded-3xl flex items-center justify-center mx-auto shadow-lg text-white text-4xl">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-black italic text-black">MONITOREO 24/7</h4>
+                            <p class="text-gray-500 text-sm mt-2 leading-relaxed">Vigila tus propiedades desde cualquier lugar del mundo a través de tu smartphone.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
-<!-- SECCIÓN DE HORARIOS DE ATENCIÓN -->
-<section class="py-20 bg-gray-50 border-t border-gray-200">
+    </section>
+
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
     <div class="max-w-4xl mx-auto px-6 text-center">
         <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-azul-rey text-xl">
             <i class="far fa-clock"></i>
         </div>
+        
         <h2 class="text-3xl font-black italic uppercase tracking-tighter text-black mb-2">
-            HORARIOS DE <span class="text-azul-rey">ATENCIÓN</span>
+            HORARIOS DE ATENCION <span class="text-azul-rey">EN OFICINA</span>
         </h2>
-        <p class="text-gray-500 text-sm max-w-md mx-auto mb-12">Estamos listos para ayudarte cuando lo necesites. Visítanos o contáctanos en los siguientes horarios.</p>
+        <p class="text-gray-500 text-sm max-w-md mx-auto mb-12">
+            Estamos listos para ayudarte cuando lo necesites. Visítanos o contáctanos en los siguientes horarios.
+        </p>
 
-        <div class="grid sm:grid-cols-2 gap-6 text-left">
-            <!-- Tarjeta 1: Lunes a Viernes -->
-            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex items-center justify-between">
-                <div>
-                    <h4 class="font-bold text-black text-lg">Lunes a Viernes</h4>
-                    <p class="text-gray-500 text-sm mt-1">Días laborales y soporte en campo</p>
+        <div class="flex justify-center items-center w-full">
+            <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 flex items-center justify-between w-full max-w-md transform transition-all duration-300 hover:shadow-2xl">
+                <div class="text-left">
+                    <h4 class="font-black text-black text-xl uppercase tracking-tight">Lunes a Viernes</h4>
+                    <p class="text-xs text-gray-400 font-semibold mt-1">Horario Corrido</p>
                 </div>
-                <div class="text-right">
-                    <span class="bg-blue-50 text-azul-rey font-black px-4 py-2 rounded-xl text-sm block">9:00 AM</span>
-                    <span class="text-gray-400 text-xs font-bold block mt-1">a 6:00 PM</span>
-                </div>
-            </div>
-
-            <!-- Tarjeta 2: Sábados -->
-            <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex items-center justify-between">
-                <div>
-                    <h4 class="font-bold text-black text-lg">Sábados</h4>
-                    <p class="text-gray-500 text-sm mt-1">de 9am a 4pm</p>
-                </div>
-                <div class="text-right">
-                    <span class="bg-blue-50 text-azul-rey font-black px-4 py-2 rounded-xl text-sm block">9:00 AM</span>
-                    <span class="text-gray-400 text-xs font-bold block mt-1">a 2:00 PM</span>
+                <div class="flex flex-col gap-2 text-right">
+                    <span class="bg-blue-50 text-azul-rey font-black px-4 py-1.5 rounded-xl text-sm block tracking-wider shadow-sm border border-blue-100">
+                        9:00 AM
+                    </span>
+                    <span class="bg-blue-50 text-azul-rey font-black px-4 py-1.5 rounded-xl text-sm block tracking-wider shadow-sm border border-blue-100">
+                        6:00 PM
+                    </span>
                 </div>
             </div>
         </div>
-        
-        <p class="mt-8 text-xs text-gray-400 font-bold uppercase tracking-widest">Domingos: Cerrado (Soporte de emergencias vía WhatsApp únicamente)</p>
+
+        <p class="mt-12 text-xs text-gray-400 font-black uppercase tracking-widest bg-white inline-block px-6 py-2 rounded-full shadow-sm border border-gray-100">
+            SOPORTE: LAS 24 HORAS DEL DIA, LOS 7 DIAS DE LA SEMANA
+        </p>
     </div>
 </section>
-
     <footer class="py-16 bg-white border-t-8 border-azul-rey px-5 text-center">
         <h2 class="text-4xl font-black italic mb-2 leading-none">SAGA<span class="text-azul-rey">NET</span></h2>
         <p class="text-4xl font-black text-black tracking-tight">772 117 9526</p>
